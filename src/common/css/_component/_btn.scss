@@ -1,0 +1,92 @@
+.c-btn {
+  align-items: center;
+  appearance: none;
+  cursor: pointer;
+  display: inline-flex;
+  height: 100%;
+  justify-content: space-between;  
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all $transition3;
+  width: 100%;
+  i{    
+    color: #fff;
+    &.fa-envelope{
+      margin-right: 7px;
+    }
+    &.fa-angle-double-right{
+      margin-left: 7px;
+    }
+  }
+  span {
+    @include hiragino(14);    
+    line-height: 2;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    @include sp {
+      font-size: 1.6rem;
+    }
+  }
+
+  &:after{
+    content: "\f101";
+    position: absolute;
+    font-size: 1.6rem;
+    right: 1.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #fff;
+  }
+
+  &--blue {
+    background: $colPrimary;
+    // box-shadow: 0 5px 10px rgba(0, 0, 0, .18);
+    max-width: 240px;
+    padding: 4px 14px 4px 19px;
+    
+    &:hover {
+      @include pc {
+        // box-shadow: 0 5px 10px rgba(0, 0, 0, .18), inset 0 0 25px rgba(255, 255, 255, 1);
+        background: $colSecondary;
+      }
+    }
+    &:after{
+      @include sp {
+        content: none;
+      }
+    }
+  }
+  &--orange {
+    position: relative;
+    background: $colOrange;
+    // box-shadow: 0 5px 10px rgba(0, 0, 0, .18);
+    max-width: 360px;
+    padding: 5px 14px 5px 35px;
+    @include sp {
+      padding: 5px 14px 5px;
+      justify-content: center;
+    }
+    i{
+      &.fa-envelope{
+        font-size: 2rem;
+      }
+    }
+    span{
+      font-size: 2rem;
+      @include sp {
+        display: inline-block;
+        width: auto;
+      }
+    }   
+    &:hover {
+      @include pc {
+        // box-shadow: 0 5px 10px rgba(0, 0, 0, .18), inset 0 0 25px rgba(255, 255, 255, 1);
+        background: $colOrangeHover;
+      }
+    }
+  }
+}

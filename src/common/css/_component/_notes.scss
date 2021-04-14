@@ -1,0 +1,12 @@
+.c-notes{
+	@include pc{
+		font-size: 1.6rem;
+		line-height: calc(30/16);
+	}
+	@include sp{
+		font-size: 1.4rem;
+		line-height: calc(50/28);
+	}
+	text-indent: -1em;
+	padding-left: 1em;
+}

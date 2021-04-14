@@ -1,0 +1,145 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, em,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  background: transparent;
+  border: 0;
+  color: #333;
+  font-family: "ヒラギノ角ゴ ProN", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴシック", "メイリオ", Meiryo, "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+  font-style: normal;
+  list-style: none;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  word-break: break-word;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.66667;
+}
+body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, em,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  font-size: 1.4rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+article,aside,details,figcaption,figure,
+footer,header,main,menu,nav,section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none;
+}
+a {
+  background: transparent;
+  color: #333;
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  transition: opacity $transition3;
+  vertical-align: baseline;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+button, input, select, textarea {
+  appearance: none;
+  background-color: transparent;
+  border-style: none;
+  box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  &:focus {
+    outline-style: none;
+  }
+}
+input, select {
+  vertical-align: middle;
+}
+select {
+  &::-ms-expand {
+    display: none;
+  }
+}
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+  width: 100%;
+}
+small {
+  font-size: 1.2rem;
+}
+sup{
+  font-size: 1.2rem;
+  vertical-align: top;
+}
+sub{
+  font-size: 1.2rem;
+  vertical-align: baseline;
+}
+main{
+  display: block;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+svg {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+}

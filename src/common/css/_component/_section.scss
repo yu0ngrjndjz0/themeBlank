@@ -1,0 +1,19 @@
+.c-section{
+	+ .c-section{
+
+	}
+	&:nth-child(odd){
+		background: #eaf1f9;
+	}
+	&:nth-child(even){
+		background: #fff;
+	}
+	&__inr{
+		margin: 0 auto;
+  	max-width: 1080px;
+  	padding: 6.5rem 4rem 7rem;
+  	@include sp {
+      padding: 3.7rem 1.25rem 4rem;
+    }
+	}
+}

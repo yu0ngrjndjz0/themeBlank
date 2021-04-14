@@ -1,0 +1,110 @@
+.c-heading-2{
+	position: relative;
+  margin-bottom: 3rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 4px solid $colPrimary;
+  @include hiragino(36);
+  font-weight: bold;
+  line-height: 1.2em;
+  color: $colPrimary;
+  letter-spacing: 0.05em;
+  @include sp {
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid $colPrimary;
+    @include hiragino(20);
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+  }
+  &:after{
+  	content: '';
+  	position: absolute;
+  	left: 0;
+  	bottom: -4px;
+  	width: 80px;
+  	height: 4px;
+  	z-index: 2;
+  	background: $colSecondary;
+  	@include sp {
+  		content: '';
+  		bottom: -2px;
+	  	width: 40px;
+	  	height: 2px;
+  	}
+  }
+  @media (max-width: 320px) {
+    font-size: 1.8rem;
+  }
+}
+
+.c-heading-3{
+	position: relative;
+  margin-bottom: 2.5rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid $colPrimary;
+  @include hiragino(28);
+  line-height: 1.2;
+  color: $colPrimary;
+  letter-spacing: 0.05em;
+  @include sp {
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $colPrimary;
+    @include hiragino(18);
+    line-height: 1.2;
+  }
+  @media (max-width: 320px) {
+    font-size: 1.6rem;
+  }
+}
+.c-heading-4{
+	margin-bottom: 3rem;
+	@include hiragino(24);
+  line-height: 1.2;
+  color: $colPrimary;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  @include sp {
+    margin-bottom: 1.5rem;
+    @include hiragino(17);
+  }
+}
+
+.c-heading-img {
+	position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $colPrimary;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  letter-spacing: 0.09em;
+  @include sp {
+    flex-wrap: wrap;
+  }
+  ._ico{
+  	@include pc {flex-shrink: 0;width: 90px; margin-right: 20px;}
+  	@include sp {width: 50px; margin: 0 auto 10px;}
+  }
+  ._txt{
+	  @include hiragino(24);
+	  line-height: calc(36/24);
+	  color: $colPrimary;
+	  @include sp {
+	    width: 100%;
+	    @include hiragino(15);
+      letter-spacing: -.01rem;
+	    line-height: calc(40/30);
+	    text-align: center;
+	  }
+  }
+  @include sp {
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
+  }
+  @media (max-width: 320px) {
+  	._txt{
+	    font-size: 1.3rem;
+	  }
+  }
+}

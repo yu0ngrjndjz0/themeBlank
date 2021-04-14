@@ -1,0 +1,54 @@
+.c-horizontal{
+	&-group{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		&--photo{
+			@include pc{
+				margin-bottom: 7rem;
+			}			
+			@include sp{
+				margin-bottom: 3.5rem;
+			}
+			&:last-child{
+				margin-bottom: 0;
+			}
+			._photo{
+				@include pc{
+					width: 560/1000*100%;
+					flex-shrink: 0;
+				}
+				@include sp{
+					order: 2;
+				}
+			}
+			._text{
+				@include pc{
+					width: 380/1000*100%;
+					flex-shrink: 0;
+				}
+				@include sp{
+					margin-bottom: 2.5rem;
+				}
+				._copy{
+					@include pc{
+						font-size: 1.6rem;
+						line-height: calc(30/16);
+						letter-spacing: 0.05em;
+					}					
+					@include sp{
+						font-size: 1.4rem;
+						line-height: calc(50/28);
+					}
+				}
+			}
+			&:nth-child(even){
+				._photo{
+					@include pc{
+						order: 2;
+					}
+				}
+			}
+		}
+	}
+}

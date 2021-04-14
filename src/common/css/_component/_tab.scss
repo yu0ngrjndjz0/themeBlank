@@ -1,0 +1,12 @@
+.c-tab-wrap {
+  @include sp {
+
+  }
+}
+
+.c-tab-content {
+  display: none;
+  &.is-active {
+    display: block;
+  }
+}

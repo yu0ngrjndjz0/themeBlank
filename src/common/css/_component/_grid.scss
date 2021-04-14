@@ -1,0 +1,31 @@
+.c-grid{	
+	&__col2{
+		@include pc{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			> *{
+				width: 480/1000*100%;
+				margin-bottom: 6rem;
+			}					
+		}
+		@include sp{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			> *{
+				width: 340/700*100%;
+				margin-bottom: 2rem;
+			}					
+		}
+		&--pc{
+			@include pc{
+				display: flex;
+				justify-content: space-between;
+				> *{
+					width: 480/1000*100%;
+				}					
+			}			
+		}		
+	}
+}

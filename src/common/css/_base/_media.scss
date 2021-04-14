@@ -1,0 +1,56 @@
+$break-pc: 768px;
+$break-sp: 767px;
+
+@mixin pc {
+  @if variable-exists(mediaType) == false {
+    @media print, (min-width: $break-pc) {
+      @content;
+    }
+  } @else {
+    @if $mediaType == 'pc' {
+      @content;
+    }
+  }
+}
+// 
+@mixin sp {
+  @if variable-exists(mediaType) == false {
+    @media screen and (max-width: $break-sp) {
+      @content;
+    }
+  } @else {
+    @if $mediaType == 'sp' {
+      @content;
+    }
+  }
+}
+
+// 
+@mixin safari {
+  @if variable-exists(mediaType) == false {
+    @media not all and ( min-resolution:.001dpcm ) {
+      // @media {
+        @content;
+      // }
+    }
+  } @else {
+    @if $mediaType == 'safari' {
+      @content;
+    }
+  }
+}
+
+// 
+@mixin ie11 {
+  @if variable-exists(mediaType) == false {
+    @media all and (-ms-high-contrast:none){
+      // @media {
+        @content;
+      // }
+    }
+  } @else {
+    @if $mediaType == 'ie11' {
+      @content;
+    }
+  }
+}

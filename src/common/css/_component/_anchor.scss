@@ -1,0 +1,77 @@
+.c-anchor{	
+	margin: 0 auto;
+  max-width: 1080px;
+  padding: 3.25rem 4rem;
+  @include pc {
+    display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+  }
+  @include sp {
+    padding: 2.5rem 1.25rem;
+  }
+  li{
+  	flex-basis: (320/1000*100%);
+  	// width: calc((320/1000*100%) - 2px);  	
+  	@include pc {
+	    margin: 0.75rem 10/1000*100%;
+	  }
+	  
+  	@include sp {
+	    padding: 0;
+	  }
+  	&:nth-child(3n+1){  		
+  		@include pc {
+		    margin-left: 0;
+		  }
+  	}
+		&:nth-child(3n) {			
+			@include pc {
+		    margin-right: 0;
+		  }
+		}
+		+ li{
+			@include sp {
+		    margin-top: 1rem;
+		  }
+		}
+  	a{
+  		position: relative;
+  		display: block;
+  		padding: 6px 10px;
+  		border: 1px solid $colPrimary;
+  		font-size: 1.6rem;
+  		color: $colPrimary;
+  		text-align: center;
+  		background: #fff;
+  		transition: all $transition3;
+  		&:after{
+  			content: '\f103';
+        position: absolute;
+        font-size: 1.6rem;
+        right: 1.6rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        color: $colPrimary;
+        transition: all $transition3;
+  		}
+  		&:hover {
+	      @include pc {
+	        background: $colSecondary;
+	        color: #fff;
+	      }
+	      &:after{
+	      	@include pc {
+		        color: #fff;
+		      }
+	      }
+	    }
+  	}
+  }
+}
+
+.block-anchor{
+	background: #fff;	
+}

@@ -1,0 +1,11 @@
+.u-only-pc {
+  @include sp {
+    display: none !important;
+  }
+}
+
+.u-only-sp {
+  @include pc {
+    display: none !important;
+  }
+}

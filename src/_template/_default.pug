@@ -1,0 +1,14 @@
+include ./_partial/_variables
+
+doctype html
+html(lang=lang)
+  head(prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# " + pageOgpType + ": http://ogp.me/ns/" + pageOgpType + "#")
+    include ./_partial/_meta
+  body(class="ja-jp qor-action-bar-exist")
+    //- .
+    //-   <script src="//tags.tiqcdn.com/utag/asics/main/dev/utag.sync.js"></script>
+      
+    include ./_components/_header
+    block contents
+    include ./_components/_footer
+    include ./_partial/_script

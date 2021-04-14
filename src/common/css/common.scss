@@ -1,0 +1,37 @@
+@import
+  './_base/_variables',
+  './_base/_media',
+  './_base/_mixin',
+  './_base/_reset',
+  './_base/_base';
+
+// @import "_bootstrap";
+
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+
+@import
+  './_ultilities/_display',
+  './_ultilities/_text_indent';
+
+
+@import
+	'./_component/_btn',
+	'./_component/_list',
+	'./_component/_heading',
+	'./_component/_tab',
+	'./_component/_text',
+	'./_component/_notes',
+	'./_component/_section',
+	'./_component/_grid',
+	'./_component/_anchor',
+	'./_component/_content';
+
+@import
+  './_layout/_footer',
+  './_layout/_header';
+
+// @import
+// 	'./_top';

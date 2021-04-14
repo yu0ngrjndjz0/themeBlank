@@ -1,0 +1,67 @@
+footer.l-footer {
+  .l-footer__inr {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 0 40px;
+    @include sp {
+      padding: 0;
+    }
+  }
+  .l-footer-site {
+    background: #fff;
+    padding: 19px 0 18px;
+    @include sp {
+      padding: 1.4rem 1.25rem 3rem;
+    }
+    .l-footer__inr {
+    	@include pc {
+        display: flex;
+	      justify-content: space-between;
+	      align-items: center;
+      }
+    }
+    &__logo {
+    	transition: opacity $transition3;
+      div{
+      	display: flex;
+      	align-items: center;
+      	font-size: 1.6rem;
+      	font-weight: bold;
+      	color: $colPrimary;
+      	font-family: "Meiryo UI", sans-serif;
+      	@include sp {
+      		margin-bottom: 1.5rem;
+	        font-size: 1.3rem;
+	      }
+      	&:before{
+      		content: '';
+      		background: url('../img/logo-site.png') no-repeat 0 0;
+      		background-size: 100% auto;
+      		display: block;
+      		width: 103px;
+      		padding-top: 42px;
+      		margin-right: 14px;
+      		flex-shrink: 0;
+      		@include sp {
+		        width: 175/2*0.1rem;
+		        padding-top: 72/2*0.1rem;
+		        margin-right: 1rem;
+		      }
+      	}
+      }
+    }
+    &__info {
+    	font-size: 1.4rem;
+    	@include sp {
+        font-size: 1.25rem;
+      }
+    }
+  }
+  .l-footer-copy{
+  	padding: 0.8rem 0;
+  	background: #f0f0f0;
+  	text-align: center;
+  	font-size: 1.2rem;
+  	line-height: 2;
+  }
+}
